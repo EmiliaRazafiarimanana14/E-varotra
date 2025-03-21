@@ -1,0 +1,67 @@
+.card {
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.form-floating input:focus,
+.form-floating textarea:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+    transform: translateY(-2px);
+}
+
+.btn-outline-secondary {
+    transition: all 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+    transform: translateY(-2px);
+}
+
+.custom-file-input:hover {
+    cursor: pointer;
+}
+
+/* Animation pour le bouton d'ajout */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn-primary:focus {
+    animation: pulse 1s infinite;
+}
+
+/* Style personnalisé pour l'aperçu de l'image */
+#image-preview img {
+    border-radius: 0.5rem;
+    border: 2px solid #0d6efd;
+    transition: all 0.3s ease;
+}
+
+#image-preview img:hover {
+    transform: scale(1.05);
+}
